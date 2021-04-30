@@ -38,6 +38,7 @@ router.get('/:id', async(req, res) => {
 router.post('/', async(req, res) => {
   try {
     const categoryCreate = await Category.create(req.body);
+    console.log(categoryCreate);
     res.status(200).json(categoryCreate);
   } catch (err) {
     res.status(400).json(err);
@@ -50,6 +51,7 @@ router.put('/:id', async(req, res) => {
         id: req.params.id,
       },
     });
+    console.log(categoryUpdate);
     if (!categoryUpdate) {
       res.status(404).json({ message: 'No category found with that id!' });
       return;
