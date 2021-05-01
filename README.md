@@ -17,5 +17,6 @@ In mySql Workbench, run the schema in the DB folder.
 Seed the DB by running `npm run seed` in the command line.
 Run `npm start` to start the server and test in Insomnia
 
-
+Video showing how to use and it's functionality:
+https://share.getcloudapp.com/geub1D6j
 
